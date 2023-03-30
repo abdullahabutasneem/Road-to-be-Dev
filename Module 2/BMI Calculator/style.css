@@ -34,14 +34,14 @@ html {
     margin-top: 13%;
 }
 
-#btn {
+#calculateBtn {
     background-color: rgb(220, 235, 240);
     border: 0;
     border-radius: 20px;
     padding: 10px;
 }
 
-#btn:hover{
+#calculateBtn:hover{
     cursor: pointer;
     background-color: chocolate;
 }
