@@ -1,0 +1,11 @@
+1: Write a function 'displayTime', where this function is defined using the arrow function syntax introduced in ES6
+2: In the function, at first we create a Date object by Date() method to get current time.
+3: It then uses string interpolation to format the time into hours, minutes, and seconds.
+4: The padStart() method is used to add a leading zero to single-digit values to keep the time format consistent.
+5: Write a logic to show AM/PM. if the hours is greater than 12 then it's PM, otherwise AM
+6: To show the time in '12 hours' method, we just write a logic that, if hours is greater than 12,
+    then update the hours =  hours-12.
+7: DOM manipulation, to insert the realtime hours,minutes and seconds value in the html.
+8: Use the setInterval() method to call it every second to update the clock continuously.
+
+So this is the procedure I follow to complete Digital Clock project.
