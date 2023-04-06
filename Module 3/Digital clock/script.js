@@ -8,9 +8,6 @@ const displayTime = () => {
     var min = dateTime.getMinutes().toString().padStart(2, '0');
     var sec = dateTime.getSeconds().toString().padStart(2, '0');
 
-    // we have to show the time is AM or PM. so we created an html span tag to show the AM/PM
-    // and get them by DOM manipulation
-
     var meridiem;
 
     // here is the condition for AM/PM. For greater than or equal to 12, we declare them as PM
