@@ -46,6 +46,20 @@ const server = http.createServer(function (req, res) {
       }
     })
   }
+  else if (req.url == "/style.css") {
+    fs.readFile('./public/style.css', function (err, data) {
+      res.writeHead(200, { "content-type": "text/css" });
+      res.write(data);
+      res.end('');
+    })
+  }
+  else if (req.url == "/script.js") {
+    fs.readFile('./public/script.js', function (err, data) {
+      res.writeHead(200, { "content-type": "text/js" });
+      res.write(data);
+      res.end('');
+    })
+  }
   else {
     const data = fs.readFileSync('./public/error.html');
     res.writeHead(404, { "content-type": "text/html" });
