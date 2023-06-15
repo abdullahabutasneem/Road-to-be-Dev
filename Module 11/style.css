@@ -1,0 +1,71 @@
+
+:root {
+    --main-font: Arial, sans-serif;
+    --primary-color: #333;
+    --secondary-color: #ccc;
+    --highlight-color: #f00;
+    --container-width: 800px;
+    --container-height: 400px;
+}
+
+body {
+    font-family: var(--main-font);
+}
+
+h1 {
+    color: var(--highlight-color);
+    font-size: 24px;
+    text-align: center;
+}
+
+.container {
+    background-color: var(--secondary-color);
+    width: var(--container-width);
+    height: var(--container-height);
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid var(--primary-color);
+}
+
+ul li:first-child {
+    color: var(--highlight-color);
+}
+
+img {
+    width: 180px;
+    height: 150px;
+}
+
+table {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid var(--primary-color);
+    padding: 8px;
+}
+
+tbody tr:hover {
+    background-color: var(--highlight-color);
+    color: #fff;
+}
+
+thead {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+a:hover {
+    color: var(--highlight-color);
+}
+
+a:active {
+    color: blue;
+}
+
+.container::before {
+    content: 'Container:';
+    font-weight: bold;
+}
